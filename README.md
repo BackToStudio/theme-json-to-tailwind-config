@@ -32,7 +32,7 @@ module.exports = {
     ],
     plugins: [
         themeJsonToTailwind({
-        themeJson: themeJson
+            themeJson: themeJson,
         })
     ]
 }
@@ -48,11 +48,8 @@ Define your spacing values in your `theme.json`:
 ```json
 {
     "settings": {
-        // ...
         "spacing": {
-            //..
             "spacingSizes": [
-                //..
                 {
                     "name": "Extra small",
                     "slug": "xs",
@@ -82,8 +79,12 @@ The plugin automatically generates Tailwind utility classes based on your `theme
 This will generate the following CSS:
 
 ```css
-.mt-20 { margin-top: 1.25rem; }
-.mb-30 { margin-bottom: 2rem; }
+.mt-xs {
+    margin-top: 1.25rem;
+}
+.mb-sm {
+    margin-bottom: 2rem;
+}
 ```
 
 ## How It Works
