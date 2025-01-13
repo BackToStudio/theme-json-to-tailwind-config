@@ -1,0 +1,19 @@
+{
+    "name": "@backto/theme-json-to-tailwind-config",
+    "version": "0.1.0",
+    "publishConfig": {
+        "access": "public"
+    },
+    "description": "A Tailwind plugin that automatically syncs WordPress theme.json spacing values with your Tailwind configuration",
+    "main": "index.js",
+    "keywords": [
+        "tailwindcss",
+        "wordpress",
+        "theme.json"
+    ],
+    "author": "BackTo",
+    "license": "MIT",
+    "peerDependencies": {
+        "tailwindcss": "^3.0.0"
+    }
+}
